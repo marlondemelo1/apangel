@@ -53,5 +53,5 @@
     "gh-pages": "^3.2.3",
     "style-loader": "^3.3.0"
   },
-   "homepage": "http://marlondemelo1.github.io/apangel"  
+   "homepage": "./"  
 }

@@ -21,9 +21,14 @@ export default class App extends React.Component {
       dtstart: '',
     }
 
-    this.onHide = this.onHide.bind(this)
-    this.handleTextName = this.handleTextName.bind(this)
-    this.handleTextDate = this.handleTextDate.bind(this)
+    this.onHide             = this.onHide.bind(this)
+    this.handleTextName     = this.handleTextName.bind(this)
+    this.handleTextDate     = this.handleTextDate.bind(this)
+    this.handleEvents       = this.handleEvents.bind(this)
+    this.handleDateSelect   = this.handleDateSelect.bind(this)
+    this.renderEventContent = this.renderEventContent.bind(this)
+    this.handleEventClick   = this.handleEventClick.bind(this)
+    this.onSubmit           = this.onSubmit.bind(this)
 
   }
 
@@ -51,17 +56,12 @@ export default class App extends React.Component {
             expandRows      = {true}
             contentHeight   = {800}
             slotMinTime     = {"09:00:00"}
-            slotMaxTime     = {"18:00:00"}
-            //initialEvents={INITIAL_EVENTS} // alternatively, use the `events` setting to fetch from a feed
+            slotMaxTime     = {"22:00:00"}
+            initialEvents   = {INITIAL_EVENTS}
             select          = {this.handleDateSelect}
-            eventContent    = {this.renderEventContent} // custom render function
+            eventContent    = {this.renderEventContent}
             eventClick      = {this.handleEventClick}
-            eventsSet       = {this.handleEvents}
-          /* you can update a remote database when these fire:
-          eventAdd={function(){}}
-          eventChange={function(){}}
-          eventRemove={function(){}}
-          */>
+            eventsSet       = {this.handleEvents}>
 
           </FullCalendar>
 
@@ -108,9 +108,7 @@ export default class App extends React.Component {
 
   handleDateSelect(selectInfo){
 
-    let calendarApi = selectInfo.view.calendar
-
-    let date = new Date(selectInfo.startStr)
+    let idEvent = createEventId()
 
     let title = this.state.name
 
@@ -122,9 +120,9 @@ export default class App extends React.Component {
 
     endDate.setHours( selectInfo.endStr.slice(11, 13), 
                       selectInfo.endStr.slice(14, 16), 
-                      selectInfo.endStr.slice(17, 19))
-    
-    let idEvent = createEventId()
+                      selectInfo.endStr.slice(17, 19))    
+
+    let calendarApi = selectInfo.view.calendar       
 
     calendarApi.addEvent({
       id: idEvent,
