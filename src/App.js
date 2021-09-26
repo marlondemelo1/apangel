@@ -131,7 +131,9 @@ export default class App extends React.Component {
       end: endDate,
       allDay: selectInfo.allDay
     })
-
+    
+    let date = new Date(selectInfo.startStr)
+    
     this.setState({ currentEvent: calendarApi.getEventById(idEvent), display: true, dtstart: date })
 
   }
