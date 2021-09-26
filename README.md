@@ -13,3 +13,7 @@ Dados sobre o APP:
 ### `URL http://localhost:8081`
 
 Caso queira mudar basta apenas editar o arquivo .env
+
+## Deploy Vercel APP
+
+https://apangel-e8mwhkory-marlondemelo1.vercel.app/
