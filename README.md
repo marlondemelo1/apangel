@@ -13,9 +13,9 @@ o APP é responsivo
 
 ## Tecnologias Utilizadas
 
-React usando npx create-react-app
-fullCalendar - https://fullcalendar.io/
-PrimeReact   - https://www.primefaces.org/
+1. React usando npx create-react-app
+2. fullCalendar - https://fullcalendar.io/
+3. PrimeReact   - https://www.primefaces.org/
 
 ## Estrutura do APP
 
