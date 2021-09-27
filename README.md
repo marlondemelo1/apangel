@@ -27,4 +27,4 @@ Caso queira mudar basta apenas editar o arquivo .env
 
 ## Deploy Vercel APP
 
-https://apangel-e8mwhkory-marlondemelo1.vercel.app/
+https://apangel-2t0utg9zr-marlondemelo1.vercel.app/
