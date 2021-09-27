@@ -6,7 +6,7 @@ o APP irá modificar o evento respeitando a data modificada no campo Data/Hora, 
 
 Não há interação com banco de dados, apenas para visualização de componentes react, utilizando o fullCalendar e primereact no Dialog
 
-o APP é responsivo
+o APP é responsivoqweqweqwe
 
 ## Estrutura do APP
 
