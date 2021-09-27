@@ -1,6 +1,6 @@
 # Calendário utilizando um Dialog para cadastro dos eventos 
 
-    Esse APP é apenas um demostrativo de como fazer um calendário, assim que o usuário selecionar um evento irá abrir um Modal e dentro um formulário.
+  Esse APP é apenas um demostrativo de como fazer um calendário, assim que o usuário selecionar um evento irá abrir um Modal e dentro deste modal um formulário.
 Inicialmente apenas com dois campos: nome, e a data inicial do evento. Caso o usuário informe uma data diferente da seleção feita no fullcalendar, e clicar em submit
 o APP irá modificar o evento respeitando a data modificada no campo Data/Hora, e assim que o Dialog se fechar a visualização no fullcalendar será jogada para o local inserido anteriormente. Caso o usuário feche o dialog o evento é removido.
 
