@@ -1,6 +1,6 @@
 # Calendário utilizando um Dialog para cadastro dos eventos 
 
-Esse APP é apenas um demostrativo de como fazer um calendário com um Dialog e dentro deste um form de cadastro.
+Esse APP é apenas um demonstrativo de como fazer um calendário com um Dialog e dentro deste um form de cadastro.
 
 Inicialmente apenas com dois campos: nome, e a data inicial do evento. 
 
