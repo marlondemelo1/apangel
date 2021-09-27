@@ -185,7 +185,7 @@ export default class App extends React.Component {
     this.state.currentEvent.setProp('title', this.state.name)
     this.state.currentEvent.setStart(this.state.dtstart)
 
-    this.setState({ display: false, showMessage: true })
+    this.setState({ display: false })
 
   }
 
