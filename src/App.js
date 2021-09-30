@@ -169,7 +169,6 @@ export default class App extends React.Component {
 
   onHide(name)
   {
-
     this.state.currentEvent.remove()
 
     this.setState({
